@@ -1,0 +1,428 @@
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi página web con HTML</title>
+  <style>
+    /* ====== ESTILOS GENERALES ====== */
+    body {
+      background-color: #e6f2ef;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      color: #2b3a3a;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2f6d5b;
+      background-color: #c7ede5;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    p, ol, ul {
+      background-color: #ffffffcc;
+      padding: 12px;
+      border-radius: 8px;
+      max-width: 800px;
+      margin: 10px auto;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    ol, ul {
+      padding-left: 40px;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
+      width: 200px;
+      border: 3px solid #b5e0d6;
+    }
+
+    /* ====== ENLACES ====== */
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: #2f6d5b;
+      background-color: #c7ede5;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 8px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    a:hover {
+      background-color: #a8e0d0;
+    }
+
+    a:active {
+      color: #c97b3b;
+    }
+
+    a:visited {
+      color: #7c1c25;
+    }
+
+    /* ====== TABLAS ====== */
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+      border: 2px solid #87cbb9;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      border: 1px solid #a3d5c7;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #c7ede5;
+      color: #2b3a3a;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9fffc;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #dff4ef;
+    }
+
+    /* ====== FORMULARIO ====== */
+    fieldset {
+      background-color: #c7ede5;
+      border-radius: 10px;
+      border: 2px solid #89c7b2;
+      padding: 20px;
+      width: 60%;
+      margin: 20px auto;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    legend {
+      font-weight: bold;
+      color: #2b3a3a;
+      padding: 0 10px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, textarea {
+      width: 95%;
+      padding: 6px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #9bcfc0;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"],
+    input[type="color"] {
+      width: auto;
+    }
+
+    input[type="submit"], input[type="reset"] {
+      background-color: #2f6d5b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 16px;
+      margin: 8px 4px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #245b4c;
+    }
+
+    /* ====== CANVAS, VIDEO, AUDIO ====== */
+    canvas {
+      display: block;
+      background-color: #f0faf8;
+      margin: 30px auto;
+      border: 2px solid #a8e0d0;
+      border-radius: 10px;
+    }
+
+    video, audio {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      text-align: center;
+      background-color: #c7ede5;
+      padding: 10px;
+      border-top: 2px solid #2f6d5b;
+      border-radius: 8px;
+      margin-top: 30px;
+      color: #2b3a3a;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🌸 Cómo hacer una página web con HTML 🌸</h1>
+<section style="
+  background-color:#ffffffcc;
+  padding:20px;
+  border-radius:12px;
+  max-width:850px;
+  margin:30px auto;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+  border:2px solid #b5e0d6;
+  font-family:'Segoe UI', Arial, sans-serif;
+  color:#2b3a3a;
+">
+
+  <h2 style="color:#2f6d5b; text-align:center; margin-bottom:20px;">🌸 Cómo hacer una página web con HTML 🌸</h2>
+
+  <p>
+    Crear una página web con HTML es como construir una casa: primero se hace la estructura (HTML), luego se pinta y decora (CSS), 
+    y finalmente se le pueden añadir funciones interactivas (JavaScript).  
+    A continuación explicaremos qué hace cada parte de una página web.
+  </p>
+
+  <h3 style="color:#2f6d5b;">🌸 La etiqueta: <code>&lt;html&gt;</code></h3>
+  <p>
+    Es la raíz del documento, lo primero que vamos a introducir de código. Todo el contenido debe estar dentro de <code>&lt;html&gt;</code>.  
+    Se puede añadir el atributo <code>lang="es"</code> para indicar que la página está en español.
+  </p>
+ 
+  <h3 style="color:#2f6d5b;">🌸 La cabecera: <code>&lt;head&gt;</code></h3>
+  <p>
+    Contiene información que no se muestra directamente al usuario, pero que es fundamental para el navegador.  
+    En esta parte se incluyen:
+  </p>
+  <ul>
+    <li><code>&lt;meta charset="UTF-8"&gt;</code> → permite usar tildes y caracteres especiales.</li>
+    <li><code>&lt;title&gt;</code> → muestra el nombre de la página en la pestaña del navegador.</li>
+    <li><code>&lt;style&gt;</code> → contiene el código CSS que da estilo y color a la web.</li>
+  </ul>
+
+  <h3 style="color:#2f6d5b;">🌸 El cuerpo: <code>&lt;body&gt;</code></h3>
+  <p>
+    Aquí se coloca todo el contenido visible de la página: textos, imágenes, enlaces, listas, tablas y formularios.  
+    Todo lo que el usuario ve e interactúa está dentro del <code>&lt;body&gt;</code>.
+  </p>
+
+  <h3 style="color:#2f6d5b;">🌸 Títulos y párrafos:</h3>
+  <p>
+    Los títulos se crean con <code>&lt;h1&gt;</code> hasta <code>&lt;h6&gt;</code>, según su importancia.  
+    Los párrafos se escriben con <code>&lt;p&gt;</code>.  
+    Estas etiquetas organizan el texto para hacerlo más claro y jerárquico.
+  </p>
+
+  <h3 style="color:#2f6d5b;">🌸 Listas:</h3>
+  <p>
+    Se utilizan para mostrar información ordenada o con símbolos.  
+    Existen dos tipos principales:
+  </p>
+  <ul>
+    <li><code>&lt;ul&gt;</code> → Lista desordenada (símbolos).</li>
+    <li><code>&lt;ol&gt;</code> → Lista ordenada (números o letras).</li>
+  </ul>
+  <ol type="a">
+    <li> Rosa </li>
+    <li> Amapola </li>
+    <li> Tulipán </li>
+    <li> Orquídea </li>
+    <li> Girasol </li> 
+  </ol>
+
+  <ul style = "list-style: circle;">
+    <li> Pera </li>
+    <li> Mandarina </li>
+    <li> Fresa </li>
+    <li> Coco </li>  
+    <li> Melón</li>
+  </ul>
+
+  <h3 style="color:#2f6d5b;">🌸 Imágenes</h3>
+  <p>
+    Se insertan con <code>&lt;img&gt;</code>.  
+    Esta etiqueta no necesita cierre y tiene dos atributos principales:
+  </p>
+  <ul>
+    <li><code>src</code> → indica la dirección de la imagen.</li>
+    <li><code>alt</code> → describe la imagen para accesibilidad.</li>
+  </ul>
+  <p><code>&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;</code></p>
+  <img src="https://mydecorinspo.com/wp-content/uploads/2024/04/Sage-green-bedroom-1-683x1024.jpg" alt="Habitación verde menta">
+
+  <h3 style="color:#2f6d5b;">🌸 Enlaces</h3>
+  <p>
+    Los enlaces permiten ir a otras páginas.  
+    Se escriben con <code>&lt;a&gt;</code> y el atributo <code>href</code>:
+  </p>
+  <p><code>&lt;a href="https://google.com"&gt;Ir a Google&lt;/a&gt;</code></p>
+  <div style="text-align:center;">
+    <a href="https://theuselessweb.com/">🎲 PULSA PARA DIVERTIRTE</a>
+    <a href="https://google.com/">🔍 GOOGLE</a>
+  </div>
+  <h3 style="color:#2f6d5b;">🌸 Tablas</h3>
+  <p>
+    Las tablas sirven para organizar datos en filas y columnas.  
+    Se crean con las etiquetas:
+  </p>
+  <ul>
+    <li><code>&lt;table&gt;</code> → Crea la tabla.</li>
+    <li><code>&lt;tr&gt;</code> → Crea una fila.</li>
+    <li><code>&lt;th&gt;</code> → Celda de encabezado (en negrita).</li>
+    <li><code>&lt;td&gt;</code> → Celda normal.</li>
+  </ul>
+  <table>
+    <tr>
+      <th>Animal</th>
+      <th>Dueño</th>
+      <th>Comida</th>
+    </tr>
+    <tr>
+      <td>Perro</td>
+      <td>Pepe</td>
+      <td>Pienso</td>
+    </tr>
+    <tr>
+      <td>Gato</td>
+      <td>Lulu</td>
+      <td>Pescado</td>
+    </tr>
+  </table>
+
+  <h3 style="color:#2f6d5b;">🌸 Formularios</h3>
+  <p>
+    Los formularios permiten recoger información del usuario (como nombre, edad o correo).  
+    Se escriben dentro de <code>&lt;form&gt;</code> y pueden incluir:
+  </p>
+  <ul>
+    <li><code>&lt;input&gt;</code> → campos de texto, contraseñas o números.</li>
+    <li><code>&lt;select&gt;</code> → listas desplegables.</li>
+    <li><code>&lt;textarea&gt;</code> → áreas para escribir mensajes.</li>
+    <li><code>&lt;button&gt;</code> o <code>&lt;input type="submit"&gt;</code> → botones para enviar datos.</li>
+  </ul>
+ <form>
+    <fieldset>
+      <legend>Datos personales</legend>
+
+      <label for="name">Nombre:</label>
+      <input type="text" id="name">
+
+      <label for="surname">Apellido:</label>
+      <input type="text" id="surname">
+
+      <label for="age">Edad:</label>
+      <input type="number" id="age">
+
+      <label>Género:</label>
+      <input type="radio" name="gender" id="femenino"> Femenino
+      <input type="radio" name="gender" id="masculino"> Masculino
+      <input type="radio" name="gender" id="otro"> Otro
+      <label for="gender">Otro:</label>
+      <input type="text" name="gender" id="otro">
+
+      <label for="place">Lugar de nacimiento:</label>
+      <select id="place">
+        <option value="Select">Seleccione una provincia</option>
+        <option value="Sevilla">Sevilla</option> 
+        <option value="Malaga">Málaga</option> 
+        <option value="Cadiz">Cádiz</option> 
+        <option value="Jaen">Jaén</option> 
+        <option value="Cordoba">Córdoba</option> 
+        <option value="Granada">Granada</option> 
+        <option value="Almeria">Almería</option> 
+        <option value="Huelva">Huelva</option> 
+      </select>
+
+      <label for="mail">Correo electrónico:</label>
+      <input type="email" id="mail">
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" required pattern="[0-9A-Za-z]{8,12}" title="Debe contener entre 8 y 12 caracteres">
+
+      <label>
+        <input type="checkbox" id="conditions"> Acepto los términos y condiciones
+      </label>
+
+      <textarea rows="5" placeholder="Escribe un mensaje..."></textarea>
+
+      <label>Elige tu color favorito:</label>
+      <input type="color" id="fcolor">
+
+      <label>Buscador: </label>
+      <input type="search" id="sch" name="sch">
+
+      <label>Selecciona un archivo:</label>
+      <input type="file" id="file">
+
+      <label>Fecha:</label>
+      <input type="date" id="bth">
+
+      <div style="text-align:center;">
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Enviar">
+      </div>
+    </fieldset>
+  </form>
+
+  <h3 style="color:#2f6d5b;">🌸 Canvas, Video y Audio</h3>
+  <p>
+    <b>Canvas</b> sirve para dibujar figuras o gráficos usando JavaScript.  
+    <b>Video</b> y <b>Audio</b> permiten reproducir archivos multimedia:
+  </p>
+  <p><code>&lt;video&gt;</code> y <code>&lt;audio&gt;</code> incluyen atributos como <code>controls</code> para mostrar los botones de reproducción.</p>
+  <canvas id="myCanvas" width="300" height="300"></canvas>
+
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#8ddbbf";
+    ctx.fillRect(70, 70, 150, 150);
+    ctx.strokeStyle = "#2f6d5b";
+    ctx.strokeRect(70, 70, 150, 150);
+  </script>
+
+  <video width="520" height="400" controls poster="https://i.ytimg.com/vi/Jl3bJwENocY/sddefault.jpg">
+    <source src="Peiname_Juana.mp4" type="video/mp4">
+  </video>
+
+  <audio controls>
+    <source src="Fat_Lip.mp3" type="audio/mp3">
+  </audio>
+
+  <h3 style="color:#2f6d5b;">🌸 El pie de página: <code>&lt;footer&gt;</code></h3>
+  <p>
+    El <code>&lt;footer&gt;</code> se coloca al final de la página.  
+    Suele contener información sobre el autor, los derechos de autor o enlaces adicionales.
+  </p>
+
+  <h3 style="color:#2f6d5b;">🌸 En resumen</h3>
+  <p>
+    HTML define la estructura de la página, CSS le da estilo y color, y JavaScript le aporta interactividad.  
+    Con solo estas tres herramientas puedes crear una web bonita, funcional y personalizada.  
+    ¡Experimenta y diviértete creando tus propias páginas!
+  </p>
+
+</section>
+
+  <footer>
+    <p>💚 Autor: Andrea Baeza González 💚</p>
+  </footer>
+</body>
+</html>
