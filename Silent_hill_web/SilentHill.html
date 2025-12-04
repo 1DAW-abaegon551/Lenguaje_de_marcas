@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silent Hill Fan Page</title>
+    <link rel="stylesheet" href="SilentHill.css">
+</head>
+<body>
+    <!-- Capas de niebla -->
+    <div class="fog fog1"></div>
+    <div class="fog fog2"></div>
+
+    <!-- Reproductor de música fijo -->
+    <div class="music-player">
+        <audio controls loop>
+            <source src="music/silent_hill_theme.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Silent Hill</h1>
+        <p>Explorando la misteriosa ciudad del terror psicológico</p>
+    </header>
+
+
+<div class="container">
+    <!-- Índice de juegos -->
+    <div class="botones">
+    <nav class="index">
+        <ul>
+            <li><a href="#sh1">Silent Hill 1</a></li>
+            <li><a href="#sh2">Silent Hill 2</a></li>
+            <li><a href="#sh3">Silent Hill 3</a></li>
+            <li><a href="#imagenes">Galería</a></li>
+            <li><a href="#videos">Videos</a></li>
+        </ul>
+    </nav>
+     </div>
+    <main>
+        <!-- Secciones de juegos -->
+        <section id="sh1">
+            <h2>Silent Hill 1</h2>
+            <p>El primer juego de la serie, donde Harry Mason busca a su hija en la misteriosa ciudad envuelta en niebla.</p>
+        </section>
+
+        <section id="sh2">
+            <h2>Silent Hill 2</h2>
+            <p>James Sunderland llega a Silent Hill tras recibir una carta de su esposa fallecida. Terror psicológico puro.</p>
+        </section>
+
+        <section id="sh3">
+            <h2>Silent Hill 3</h2>
+            <p>Heather Mason, hija de Harry Mason, se enfrenta a la oscuridad y los horrores de Silent Hill.</p>
+        </section>
+
+        <!-- Galería de imágenes -->
+        <section id="imagenes">
+            <h2>Galería de Imágenes</h2>
+            <div class="carousel">
+                <img src="Imagenes/memo-bg.png" alt="Silent Hill 1" class="slide">
+                <img src="Imagenes/slide2.png" alt="Silent Hill 2" class="slide">
+                <img src="Imagenes/slide1.png" alt="Silent Hill 3" class="slide">
+                <img src="Imagenes/223076.gif" alt="Silent Hill 2 gif" class="slide">
+            </div>
+            <div class="buttons">
+                <button onclick="prevSlide()">⟨ Prev</button>
+                <button onclick="nextSlide()">Next ⟩</button>
+            </div>
+        </section>
+
+        <!-- Sección de videos -->
+        <section id="videos">
+            <h2>Videos</h2>
+            <div class="videos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VX3Gz3VvTsE" 
+                    title="Silent Hill Trailer" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8xPj4gN4Bhg" 
+                    title="Silent Hill Gameplay" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+</div>
+    <footer>
+        <p>Creado por un fan de Silent Hill &copy; 2025</p>
+    </footer>
+
+    <script src="SilentHill.js"></script>
+</body>
+</html>
+
