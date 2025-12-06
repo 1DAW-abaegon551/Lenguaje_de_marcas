@@ -3,163 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silent Hill Fan Page</title>
+    <title>Silent Hill</title>
+    <link rel="icon" type="image/png" href="imagenes/metatron.png">
     <link rel="stylesheet" href="SilentHill.css">
 </head>
 <body>
-    <!-- Capas de niebla -->
+
+    <!-- ===================== CAPAS DE NIEBLA ===================== -->
     <div class="fog fog1"></div>
     <div class="fog fog2"></div>
 
-    <!-- Reproductor de música fijo -->
+    <!-- ===================== REPRODUCTOR DE MÚSICA FIJO ===================== -->
     <div class="music-player">
         <audio controls loop>
             <source src="music/silent_hill_theme.mp3" type="audio/mpeg">
         </audio>
     </div>
 
-    <!-- Encabezado -->
+    <!-- ===================== ENCABEZADO ===================== -->   
+    <div class="image-absolute-top">
+        <img src="imagenes/alchemy.png" alt="Imagen del sello de metatron.">
+    </div>
     <header>
         <p>In my restless dreams, I see that town...</p>
         <h1>Silent Hill</h1>
     </header>
+   
+    <div class="container">
+
+        <!-- ===================== MENÚ DE NAVEGACIÓN PRINCIPAL ===================== -->
+        <nav class="index">
+            <ul>
+                <li><a href="#sh1">Silent Hill 1</a></li>
+                <li><a href="#sh2">Silent Hill 2</a></li>
+                <li><a href="#sh3">Silent Hill 3</a></li>
+                <li><a href="#imagenes">Inventario</a></li>
+                <li><a href="#videos">Videos</a></li>
+            </ul>
+        </nav>
+
+        <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
+        <main>
+
+            <!-- ===================== SECCIÓN SILENT HILL 1 ===================== -->
+            <section id="sh1">
+                <h2>Silent Hill 1</h2>
+                <div class="game-description-box" id="lore1">
+                    <p>El juego sigue a Harry Mason, un hombre que viaja con su hija adoptiva, Cheryl, a la pequeña ciudad de Silent Hill para pasar unas vacaciones. 
+                        Durante el viaje, Harry se desvía del camino y sufre un accidente; al despertar, descubre que Cheryl ha desaparecido misteriosamente. 
+                        Desesperado, comienza a explorar la ciudad en busca de su hija.</p>
+                    <p>A medida que Harry avanza, se encuentra con un pueblo sumido en una niebla espesa y habitado por criaturas grotescas. 
+                        También conoce a varios personajes ambiguos, como Cybil Bennett, una oficial de policía, y Dahlia Gillespie, una mujer vinculada a los extraños sucesos del lugar. 
+                        Harry descubre que Cheryl es parte de un ritual de culto realizado por la secta de Silent Hill, quienes buscan invocar a un ser demoníaco llamado Samael a través de su sangre.</p>
+                    <p>La ciudad parece reflejar los miedos y traumas internos de sus habitantes, alternando entre el mundo “real” y un mundo alternativo oscuro y distorsionado, donde la violencia y el terror son más intensos. 
+                        Al final, según las decisiones del jugador, Harry puede rescatar a Cheryl y escapar de la ciudad, o fracasar, enfrentándose a diferentes finales que revelan la verdadera naturaleza de Silent Hill y el destino de los personajes.</p>
+                </div>
+
+                <div class="carousel" id="img1">
+                    <img src="Imagenes/Silent_Hill_video_game_cover.png" alt="Silent Hill 1" class="slide">
+                    <img src="Imagenes/Silent-Hill-1-6.jpg" alt="Silent Hill 2" class="slide">
+                    <img src="Imagenes/sh1.jpg" alt="Silent Hill 3" class="slide">
+                    <img src="Imagenes/SH1_rifle.jpg" alt="Silent Hill 2 gif" class="slide">
+                    <img src="Imagenes/police.gif" alt="Silent Hill 2 gif" class="slide">
+                </div>
+
+                <div class="buttons">
+                    <button class="prev">⟨ Prev</button>
+                    <button class="next">Next ⟩</button>
+                </div>
+
+                <h3>Monstruos de Silent Hill 1</h3>
+                <table class="tabla-items" id="monstruos1">
+                    <tr>
+                        <th>Imagen</th><th>Monstruo</th><th>Descripción breve</th>
+                    </tr>
+                    <!-- Monstruos -->
+                    <tr><td><img src="" class="monster-img"></td><td>Air Screamer</td><td>Criatura voladora similar a un pterodáctilo que ataca en picada.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Night Flutter</td><td>Variante más fuerte del Air Screamer en el Otro Mundo.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Groaner</td><td>Perros desollados que patrullan las calles de Silent Hill.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Romper</td><td>Versión más rápida y agresiva del perro Groaner.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Grey Child</td><td>Criaturas infantiles deformadas del colegio.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Mumbler</td><td>Seres pequeños y peligrosos que atacan en grupo.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Stalker</td><td>Pequeñas sombras que representan niños fantasma.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Larval Stalker</td><td>Versión más débil y temblorosa del Stalker.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Bloodsucker</td><td>Trampas invisibles de tentáculos que dañan al jugador.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Creeper</td><td>Bichos tipo cucaracha gigantes que atacan en enjambres.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Hanged Scratcher</td><td>Cucarachas más grandes y fuertes del Otro Mundo.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Wormhead</td><td>Larva gigante que aparece como enemigo subterráneo.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Puppet Nurse</td><td>Enfermeras controladas por el parásito Incubus.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Puppet Doctor</td><td>Doctores manipulados por el parásito demoníaco.</td></tr>
+                    <!-- Jefes -->
+                    <tr><td><img src="" class="monster-img"></td><td>Split Head</td><td>Lagarto gigante del colegio.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Parasite</td><td>Parásito que controla enemigos humanos.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Cyborg Moth</td><td>Polilla gigante del parque de atracciones.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Floatstinger</td><td>Polilla enorme que ataca en el Otro Mundo.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>God (Incubus)</td><td>Forma demoníaca final nacida del sufrimiento de Alessa.</td></tr>
+                </table>
+            </section>
+
+            <!-- ===================== SECCIÓN SILENT HILL 2 ===================== -->
+            <section id="sh2">
+                <h2>Silent Hill 2</h2>
+                <div class="game-description-box" id="lore2">
+                    <p>El juego sigue a James Sunderland, quien recibe una carta de su esposa Mary, fallecida hace tres años, diciéndole que lo espera en su “lugar especial” en Silent Hill...</p>
+                    <p>Al llegar, Silent Hill se revela como un lugar lleno de niebla, soledad y criaturas grotescas que parecen reflejar los miedos, culpas y traumas internos...</p>
+                    <p>A medida que avanza, James descubre que Silent Hill no es solo un lugar físico, sino un espejo de su subconsciente...</p>
+                </div>
+
+                <div class="carousel1" id="img2">
+                    <img src="Imagenes/memo-bg.png" alt="Silent Hill 1" class="slide">
+                    <img src="Imagenes/slide2.png" alt="Silent Hill 2" class="slide">
+                    <img src="Imagenes/slide1.png" alt="Silent Hill 3" class="slide">
+                    <img src="Imagenes/223076.gif" alt="Silent Hill 2 gif" class="slide">
+                </div>
+
+                <div class="buttons">
+                    <button class="prev">⟨ Prev</button>
+                    <button class="next">Next ⟩</button>
+                </div>
+
+                <h3>Monstruos de Silent Hill 2</h3>
+                <table class="tabla-items" id="monstruos2">
+                    <tr>
+                        <th>Imagen</th><th>Monstruo</th><th>Descripción breve</th>
+                    </tr>
+                    <!-- Monstruos y Jefes SH2 -->
+                    <tr><td><img src="" class="monster-img"></td><td>Pyramid Head</td><td>Manifestación del castigo, culpa y represión de James.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Lying Figure</td><td>Humanoides encerrados en un traje de piel; escupen ácido.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Mannequin</td><td>Compuesto solo de piernas femeninas; simboliza deseo reprimido.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Nurse</td><td>Enfermeras distorsionadas por la mente perturbada de James.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Mary/Maria Boss</td><td>Última manifestación del conflicto emocional de James.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Abstract Daddy</td><td>Representa el abuso sufrido por Angela; enemigo extremadamente simbólico.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Flesh Lip</td><td>Cuerpos colgantes que representan abuso emocional y verbal.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Mandarin</td><td>Criaturas bajo las rejillas, invisibles salvo por sus brazos largos.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Bubble Head Nurse</td><td>Versión deformada de la obsesión de James con las enfermeras.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Doorman</td><td>Ser atrapado entre dos puertas; simboliza opresión.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Insane Patient</td><td>Figura tambaleante que parece un paciente mental fuera de control.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Pyramid Heads (x2)</td><td>Enfrentamiento final de James con su culpa.</td></tr>
+                </table>
+            </section>
+
+            <!-- ===================== SECCIÓN SILENT HILL 3 ===================== -->
+            <section id="sh3">
+                <h2>Silent Hill 3</h2>
+                <div class="game-description-box" id="lore3">
+                    <p>El juego sigue a Heather Mason, una adolescente que vive con su padre Harry...</p>
+                    <p>Heather se adentra en una ciudad Silent Hill más oscura y distorsionada...</p>
+                    <p>A lo largo del juego, Heather debe enfrentarse a su propio pasado y a la verdad sobre su origen...</p>
+                </div>
+
+                <div class="carousel2" id="img3">
+                    <img src="Imagenes/memo-bg.png" alt="Silent Hill 1" class="slide">
+                    <img src="Imagenes/slide2.png" alt="Silent Hill 2" class="slide">
+                    <img src="Imagenes/slide1.png" alt="Silent Hill 3" class="slide">
+                    <img src="Imagenes/223076.gif" alt="Silent Hill 2 gif" class="slide">
+                </div>
+
+                <div class="buttons">
+                    <button class="prev">⟨ Prev</button>
+                    <button class="next">Next ⟩</button>
+                </div>
+
+                <h3>Monstruos de Silent Hill 3</h3>
+                <table class="tabla-items" id="monstruos3">
+                    <tr>
+                        <th>Imagen</th><th>Monstruo</th><th>Descripción breve</th>
+                    </tr>
+                    <!-- Monstruos y Jefes SH3 -->
+                    <tr><td><img src="" class="monster-img"></td><td>Closer</td><td>Gigantes con brazos prensiles que representan opresión hacia Heather.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Pendulum</td><td>Criatura flotante con cuchillas giratorias y chillidos.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Slurper</td><td>Bestias rápidas que se arrastran para atacar por sorpresa.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Numb Body</td><td>Larvas blandas que suenan hinchadas; simbolizan fragilidad.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Double Head</td><td>Perros bífidos con carne expuesta del Otro Mundo.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Scraper</td><td>Humanos del culto con cuchillas; simbolizan fanatismo agresivo.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Nurse (SH3)</td><td>Más grotescas y agresivas que en SH2; trauma hospitalario de Heather.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Hairless</td><td>Bestias sin pelo que atacan en espacios estrechos.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Glow Worm</td><td>Orugas bioluminiscentes del parque de atracciones.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Memory of Alessa</td><td>Doppelgänger de Heather; representa su conflicto interno.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Split Worm</td><td>Gusano gigante que aparece tempranamente.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Missionary</td><td>Asesino enviado por el culto para eliminar a Heather.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Glutton</td><td>Enorme criatura invisible tras un sello mágico.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>Leonard Wolf</td><td>Padre de Claudia transformado en monstruo acuático.</td></tr>
+                    <tr><td><img src="" class="monster-img"></td><td>God (SH3)</td><td>La deidad incompleta del culto, nacida a través de Heather.</td></tr>
+                </table>
+            </section>
+
+            <!-- ===================== SECCIÓN VIDEOS ===================== -->
+            <section id="videos">
+                <h2>Videos</h2>
+                <div class="videos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VX3Gz3VvTsE" title="Silent Hill Trailer" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8xPj4gN4Bhg" title="Silent Hill Gameplay" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- ===================== FORMULARIO DE CONTACTO ===================== -->
+    <section id="contacto">
+        <h2>Contacto del Culto</h2>
+        <p>Si deseas “unirte” al culto o recibir señales del Otro Mundo, deja tus datos.</p>
+        <form class="form-sh">
+            <label>Nombre:</label>
+            <input type="text" placeholder="Tu nombre..." required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="correo@ejemplo.com" required>
+
+            <label>Mensaje:</label>
+            <textarea placeholder="¿Qué deseas saber...?" required></textarea>
+
+            <button type="submit">Enviar al Otro Mundo</button>
+        </form>
+    </section>
+
+    <!-- DIV CON IMAGEN ESTÁTICA Y GIF ANIMADO -->
+    <div class="bottom-container">
+        <img src="Imagenes/pyramid-head.gif" alt="Pyramid Head" class="moving-gif">
+    </div>
 
 
-<div class="container">
-    <!-- Índice de juegos -->
-    <div class="botones">
-    <nav class="index">
-        <ul>
-            <li><a href="#sh1">Silent Hill 1</a></li>
-            <li><a href="#sh2">Silent Hill 2</a></li>
-            <li><a href="#sh3">Silent Hill 3</a></li>
-            <li><a href="#imagenes">Inventario</a></li>
-            <li><a href="#videos">Videos</a></li>
-        </ul>
-    </nav>
-     </div>
-    <main>
-        <!-- Secciones de juegos -->
-        <section id="sh1">
-            <h2>Silent Hill 1</h2>
-            <p>Silent Hill es la primera entrega de la serie de videojuegos Silent Hill, una franquicia de gran éxito de juegos de aventura y survival horror. 
-                Silent Hill fue desarrollado por Team Silent y publicado por Konami. 
-                Fue publicado para la PlayStation de Sony en Norteamérica el 31 de enero de 1999 y hasta el momento ha generado muchas secuelas, una serie de novelas gráficas, dos películas y otras obras derivadas.</p>
-            <br>
-                <p>Harry Mason, un escritor de 32 años, es convencido por su hija Cheryl de pasar unas vacaciones en Silent Hill; 
-                    mientras conduce a las afueras del pueblo, Harry desvía su coche para evitar golpear a una niña que se aparece de la nada en la carretera. 
-                    Como resultado, estrella su vehículo y pierde el conocimiento. Tras esto, despierta en el pueblo y conoce a Cybil Bennett, 
-                    una oficial de policía que trabaja en una ciudad cercana, además de darse cuenta de que su hija Cheryl ha desaparecido.</p>
-                <br>
-                 <p>La ciudad de Silent Hill está desierta y cubierta de niebla, con nieve cayendo fuera de temporada y monstruos hostiles vagando por las calles. 
-                    Harry conoce a algunas personas durante su aventura, entre ellas: Dahlia Gillespie, quien lo guía por el pueblo y le entrega el Flauros, 
-                    un artefacto encantado; el doctor Michael Kaufmann, director del Hospital Alchemilla de Silent Hill; y la enfermera Lisa Garland, 
-                    que trabaja en Alchemilla. Harry también se encuentra con un símbolo esparcido por toda la ciudad</p>
-                <br>
-                <p>Dahlia afirma que el pueblo acabará sumido en la oscuridad si el símbolo continúa extendiéndose. 
-                    Finalmente, esta oscuridad empieza a apoderarse de Silent Hill, y de acuerdo con Gillespie,  
-                    la responsable del símbolo y de su multiplicación es la chica que Harry vio en la carretera. 
-                    Así, Dahlia lo insta a detenerla, pues si no lo hace, Cheryl morirá. Más tarde, Harry es atacado por Cybil, 
-                    quién está infectada por un parásito; el jugador debe elegir si salvarla o no.</p>
-                    <br>
-                    <p>Finalmente, la chica es alcanzada por Harry y atrapada por el Flauros. 
-                        Dahlia entonces aparece, revelando que ha manipulado a Harry para que atrape a la niña ya que él es el único que podía acercarse a ella sin que representara una amenaza; 
-                        además, revela que la niña atrapada es su propia hija, Alessa. Tras lo sucedido, Harry despierta en un lugar sin lógica aparente conocido como Nowhere donde vuelve a encontrarse con Lisa, 
-                        la cual se ha dado cuenta de que es "igual que ellos" y empieza a transformarse frente a Harry, quien huye horrorizado. Posteriormente, Harry vuelve a encontrarse con Dahlia, Cheryl y Alessa; 
-                        la verdad es entonces revelada.</p>
-                    <br>
-                    <p>El pueblo de Silent Hill alberga un culto dedicado al dios-demonio Samael. 
-                        El culto igualmente, fabrica y distribuye una droga alucinógena llamada PTV para obtener ingresos. 
-                        Algunos miembros, sin embargo, tenían otra meta: dar a luz al dios y traer consigo un paraíso eterno.</p>
-                    <br>
-                    <p>Hace siete años, Dahlia Gillespie, una de los miembros más influyentes del culto, pretendió impregnar a su hija Alessa, quien tiene poderes psíquicos, con la semilla del dios. 
-                        El proceso del ritual de impregnación, llevado a cabo en casa de los Gillespie, involucró una gran cantidad de fuego, 
-                        que consecuentemente incrementó por el estrés de Alessa que aumentó sus poderes psíquicos a tal punto que acabó por incendiar la casa. 
-                        Alessa terminó severamente quemada, por lo que fue hospitalizada en secreto en el sótano del Hospital Alchemilla y el doctor Kaufmann asignó a Lisa a cuidar de la niña. 
-                        Alessa además, en oposición al objetivo del culto, dividió su alma en dos durante el incendio, haciendo que el plan no pudiese tener éxito con solo media alma. 
-                        La otra mitad de esta apareció en forma de bebé, quien fue encontrada y adoptada por Harry Mason, a la que llamó Cheryl. 
-                        En el presente, Cheryl es atraída a Silent Hill por medio de un hechizo usado por el culto, quienes buscan reunir las almas. 
-                        Alessa, sintiendo el regreso de Cheryl, comienza a usarla para cubrir al pueblo en los símbolos que Harry ha visto, llamado «sello de Metatrón», 
-                        los cuales tenían como propósito contrarrestar las fuerzas del dios y así evitar el nacimiento. Al extender el sello, Alessa involuntariamente proyecta el mundo de pesadilla en que vivió durante los 7 años que estuvo hospitalizada. 
-                        Dahlia revela que también le mintió a Harry acerca del símbolo, pues ella sabía que éste era aparentemente repelente. Así, con el plan de Alessa frustrado y su alma reunificada, la deidad dentro de su cuerpo es revivida.</p>
-                    <br>
-                    <p></p>
-                    <br>
-            <div class="carousel1">
-                <img src="Imagenes/memo-bg.png" alt="Silent Hill 1" class="slide">
-                <img src="Imagenes/slide2.png" alt="Silent Hill 2" class="slide">
-                <img src="Imagenes/slide1.png" alt="Silent Hill 3" class="slide">
-                <img src="Imagenes/223076.gif" alt="Silent Hill 2 gif" class="slide">
-            </div>
-            <div class="buttons">
-                <button onclick="prevSlide()">⟨ Prev</button>
-                <button onclick="nextSlide()">Next ⟩</button>
-            </div>
-        </section>
-
-        <section id="sh2">
-            <h2>Silent Hill 2</h2>
-            <p>James Sunderland llega a Silent Hill tras recibir una carta de su esposa fallecida. Terror psicológico puro.</p>
-            
-            <div class="carousel2">
-                <img src="Imagenes/memo-bg.png" alt="Silent Hill 1" class="slide">
-                <img src="Imagenes/slide2.png" alt="Silent Hill 2" class="slide">
-                <img src="Imagenes/slide1.png" alt="Silent Hill 3" class="slide">
-                <img src="Imagenes/223076.gif" alt="Silent Hill 2 gif" class="slide">
-            </div>
-            <div class="buttons">
-                <button onclick="prevSlide()">⟨ Prev</button>
-                <button onclick="nextSlide()">Next ⟩</button>
-            </div>
-        </section>
-
-        <section id="sh3">
-            <h2>Silent Hill 3</h2>
-            <p>Heather Mason, hija de Harry Mason, se enfrenta a la oscuridad y los horrores de Silent Hill.</p>
-           
-            <div class="carousel3">
-                <img src="Imagenes/memo-bg.png" alt="Silent Hill 1" class="slide">
-                <img src="Imagenes/slide2.png" alt="Silent Hill 2" class="slide">
-                <img src="Imagenes/slide1.png" alt="Silent Hill 3" class="slide">
-                <img src="Imagenes/223076.gif" alt="Silent Hill 2 gif" class="slide">
-            </div>
-            <div class="buttons">
-                <button onclick="prevSlide()">⟨ Prev</button>
-                <button onclick="nextSlide()">Next ⟩</button>
-            </div>
-        </section>
-
-        <!-- Galería de imágenes -->
-        <section id="imagenes">
-            <h2>Galería de Imágenes</h2>
-            <div class="carousel">
-                <img src="Imagenes/memo-bg.png" alt="Silent Hill 1" class="slide">
-                <img src="Imagenes/slide2.png" alt="Silent Hill 2" class="slide">
-                <img src="Imagenes/slide1.png" alt="Silent Hill 3" class="slide">
-                <img src="Imagenes/223076.gif" alt="Silent Hill 2 gif" class="slide">
-            </div>
-            <div class="buttons">
-                <button onclick="prevSlide()">⟨ Prev</button>
-                <button onclick="nextSlide()">Next ⟩</button>
-            </div>
-        </section>
-
-        <!-- Sección de videos -->
-        <section id="videos">
-            <h2>Videos</h2>
-            <div class="videos">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VX3Gz3VvTsE" 
-                    title="Silent Hill Trailer" frameborder="0" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/8xPj4gN4Bhg" 
-                    title="Silent Hill Gameplay" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </section>
-    </main>
-</div>
+    <!-- ===================== FOOTER ===================== -->
     <footer>
         <p>Creado por un fan de Silent Hill &copy; 2025</p>
     </footer>
 
+    <!-- MENÚ PRINCIPAL DESPLEGABLE -->
+    <div class="menu-hamburger">
+        <button id="menu-toggle">☰</button>
+        <nav class="menu-nav">
+            <ul>
+                <li>
+                    <a href="#sh1">Silent Hill 1</a>
+                    <ul class="submenu">
+                        <li><a href="#lore1">Argumento</a></li>
+                        <li><a href="#img1">Imágenes</a></li>
+                        <li><a href="#monstruos1">Monstruos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#sh2">Silent Hill 2</a>
+                    <ul class="submenu">
+                        <li><a href="#lore2">Argumento</a></li>
+                        <li><a href="#img2">Imágenes</a></li>
+                        <li><a href="#monstruos2">Monstruos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#sh3">Silent Hill 3</a>
+                    <ul class="submenu">
+                        <li><a href="#lore3">Argumento</a></li>
+                        <li><a href="#img3">Imágenes</a></li>
+                        <li><a href="#monstruos3">Monstruos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- ===================== SCRIPT ===================== -->
     <script src="SilentHill.js"></script>
+
 </body>
 </html>
