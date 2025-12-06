@@ -93,7 +93,7 @@ footer { text-align:center; padding:20px; background-color:#1a1a1a; color:#7c7c7
 .form-sh button { padding:10px; background-color:#550000; border:2px solid #220000; color:#fff; cursor:pointer; }
 
 /* Contenedor fijo en el bottom con imagen de fondo estática */
-.bottom-container {position: fixed; bottom: 0; left: 0; width: 100%; height: 120px; background: url('imagenes/pyramid-head.gif') no-repeat center bottom; background-size: cover; overflow: hidden; z-index: 1000;}
+.bottom-container {position: relative; bottom: 0; left: 0; width: 100%; height: 120px; background: url('imagenes/pyramid-head.gif') no-repeat center bottom; background-size: cover; overflow: hidden; z-index: 1000;}
 
 /* GIF que se mueve de izquierda a derecha */
 .moving-gif { position: absolute; bottom: 0; left: -200px; width: 150px; height: auto; animation: moveRight 30s linear infinite;}
