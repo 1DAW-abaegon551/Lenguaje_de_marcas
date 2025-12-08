@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de la página</title>
+    <!-- Ícono de la pestaña -->
+    <link rel="icon" type="image/png" href="imagenes/metatron.png">
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="SilentHill.css">
+</head>
+<body>
+
+    <!-- Niebla / efectos globales -->
+    <div class="fog fog1"></div>
+    <div class="fog fog2"></div>
+
+    <!-- Reproductor de música -->
+    <div class="music-player">
+        <audio id="player" controls></audio>
+        <p id="songTitle" class="song-title">Reproduciendo: —</p>
+        <div style="text-align:center; margin-top:5px;">
+            <button id="prevSong">⟨</button>
+            <button id="nextSong">⟩</button>
+        </div>
+    </div>
+
+    <!-- Encabezado general -->
+    <div class="image-absolute-top">
+        <img src="imagenes/alchemy.png" alt="Imagen del sello de metatron.">
+    </div>
+    <header>
+        <p>In my restless dreams, I see that town...</p>
+        <h1>Silent Hill</h1>
+          <!-- Menú principal -->
+        <nav class="index">
+            <ul>
+                <li><a href="SilentHill.html">Silent Hill 1</a></li>
+                <li><a href="SilentHill2.html">Silent Hill 2</a></li>
+                <li><a href="SilentHill3.html">Silent Hill 3</a></li>
+                <li><a href="SHVideos.html">Videos</a></li>
+                <li><a href="SHContacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- GIF sticky a la izquierda -->
+    <img src="Imagenes/robss.gif" class="sticky-gif">
+
+    <div class="container">
+
+        <main> 
+            <!-- ===================== SECCIÓN VIDEOS ===================== -->
+            <section id="videos">
+            <h2>Videos</h2>
+                <div class="videos">
+
+                    <video width="560" height="315" controls poster="imagenes/Silent_Hill_video_game_cover.png">
+                        <source src="Videos/Trailer1.mp4" type="video/mp4">
+                    </video>
+
+                    <video width="560" height="315" controls poster="imagenes/Silent_Hill_2.jpg">
+                        <source src="Videos/Trailer2.mp4" type="video/mp4">
+                    </video>
+
+                    <video width="560" height="315" controls poster="imagenes/sh3-cover.jpg">
+                        <source src="Videos/Trailer3.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <!-- GIF animado inferior -->
+    <div class="bottom-container">
+        <img src="Imagenes/pyramid-head.gif" alt="Pyramid Head" class="moving-gif">
+    </div>
+
+    <!-- Footer común -->
+    <footer>
+        <p>Creado por un fan de Silent Hill &copy; 2025</p>
+    </footer>
+
+    <!-- Menú móvil / hamburguesa -->
+    <div class="menu-hamburger">
+        <button id="menu-toggle">☰</button>
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="SilentHill.html">Silent Hill 1</a></li>
+                <li><a href="SilentHill2.html">Silent Hill 2</a></li>
+                <li><a href="SilentHill3.html">Silent Hill 3</a></li>
+                <li><a href="SHVideos.html">Videos</a></li>
+                <li><a href="SHContacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Script principal -->
+    <script src="SilentHill.js"></script>
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 /* Reset y box-sizing */
-* { margin:0; padding:0; box-sizing:border-box; }
+* { margin:0 /*Quita margenes por defecto*/; padding:0 /*Quita rellenos por defecto*/; box-sizing:border-box/*Hace que en el width incluya el padding y el border*/; }
 
 /* Fuentes */
 @font-face { font-family:'SLNTHLE'; src:url('fonts/SLNTHLE.TTF') format('truetype'); }
@@ -14,22 +14,23 @@ h1,h2,h3 { font-family:'SLNTHLE',sans-serif; font-weight:normal; }
 button, .index a { font-family:'BookAntiqua', Palatino, serif; }
 
 /* Contenedor principal */
-main { background:#0E0E0E; border:4px outset #333; padding:8px; width:90%; max-width:1000px; margin:40px auto; }
+main { background:#0E0E0E;border-top: 1px solid transparent; border:4px outset #333; padding:8px; width:90%; max-width:1000px; margin:0 auto; }
 section { margin-bottom:40px; }
 section h2 { font-size:36px; margin-bottom:15px; text-shadow:2px 2px #000; }
 
 /* Header */
-header { position: relative ;text-align:center; padding:50px 20px; background:#1a1a1a; color:#fff; text-shadow:2px 2px #000; }
+header { position: relative ;text-align:center; padding:10px 5px; background:#1a1a1a; color:#fff; text-shadow:2px 2px #000; }
 header h1 { font-size:50px; margin-bottom:10px; }
 header p { font-size:20px; }
 .image-absolute-top { position:absolute; top:10px; right:10px; width:150px; height:150px; z-index:10;}
 .image-absolute-top img {width: 100%; height: 100%; object-fit: cover;}
+
 /* Nieblas */
 .fog { position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:1000; }
-.fog1 { background:url('imagenes/niebla3.png') repeat; opacity:0.3; width:200%; height:200%; animation:moveFogDiagonal 120s linear infinite; z-index:1000; }
-.fog2 { background:url('imagenes/niebla3.png') repeat; opacity:0.2; width:200%; height:200%; animation:moveFogDiagonal2 180s linear infinite; z-index:1001; }
-@keyframes moveFogDiagonal {0%{background-position:0 0;}100%{background-position:1000px 1000px;}}
-@keyframes moveFogDiagonal2 {0%{background-position:0 0;}100%{background-position:1200px 800px;}}
+/*capa 1 de niebla*/.fog1 { background:url('imagenes/niebla3.png') repeat; opacity:0.3; width:200%; height:200%; animation:moveFogDiagonal 120s linear infinite; z-index:1000; }
+/*capa 2 de niebla*/.fog2 { background:url('imagenes/niebla3.png') repeat; opacity:0.2; width:200%; height:200%; animation:moveFogDiagonal2 180s linear infinite; z-index:1001; }
+/*animacion para mover la niebla*/@keyframes moveFogDiagonal {0%{background-position:0 0;}100%{background-position:1000px 1000px;}}
+/*animacion para mover la niebla*/@keyframes moveFogDiagonal2 {0%{background-position:0 0;}100%{background-position:1200px 800px;}}
 
 /* Slideshow */
 .carousel, .carousel1, .carousel2 { position:relative; overflow:hidden; height:400px; border:5px solid #222; box-shadow:0 0 15px rgba(0,0,0,0.9); margin-bottom:10px; display:flex; justify-content:center; align-items:center; text-align:center; }
@@ -41,23 +42,14 @@ button { background-color:#333; color:#eee; border:none; padding:10px 20px; font
 button:hover { background-color:#555; }
 
 /* Menú principal */
-.index { background-color:transparent; border:none; padding:10px 0; position:static; top:0px; z-index:999; width: 90% ; max-width: 1000px; display:flex; justify-content:center; border-radius:8px; margin: 0 auto;}
-.index ul { list-style:none; display:flex; width:100%; gap:10px; }
+.index { background-color:transparent; border:none; padding:10px 0; position:relative; top:0px; z-index:999; width: 90% ; max-width: 1000px; display:flex; justify-content:center; border-radius:8px; margin: 0 auto;}
+.index ul { list-style:none; display:flex; width:100%; gap:10px; padding: 0; margin: 0;}
 .index ul li { flex:1; }
-.index ul li a {
-    display:flex; justify-content:center; align-items:center; width:100%; padding:15px 0; background-color:#1a1a1a;
-    border:4px outset #333; text-decoration:none; color:#eee; font-size:18px; transition:0.3s ease;
-}
+.index ul li a { /*Enlaces del menu*/display:flex; justify-content:center; align-items:center; width:100%; padding:15px 0; background-color:#1a1a1a; border:4px outset #333; text-decoration:none; color:#eee; font-size:18px; transition:0.3s ease;}
 .index ul li a:hover { background-color:#333; color:#fff; }
-.menu-drop > ul > li {position: relative;}
-.menu-drop .submenu {display: none; position: absolute; top: 100%; left: 0; background-color: #222; border: 2px solid #333; border-radius: 5px; min-width: 150px; z-index: 1000;}
-.menu-drop .submenu li {border-bottom: 1px solid #333;}
-.menu-drop ul li:hover > .submenu {display: block;}
-.menu-drop .submenu li a {padding: 10px; display: block; text-align: left; color: #eee; text-decoration: none; font-size: 16px;}
-.menu-drop .submenu li a:hover {background-color: #333; color: #fff;}
 
 
-/* Menú hamburguesa compacto */
+/* Menú desplegable */
 .menu-hamburger {position:fixed; top:10px; left:10px; z-index:1001;}
 #menu-toggle {background:#222; color:#fff; border:none; padding:8px 12px; cursor:pointer; border-radius:5px; font-size:18px;}
 .menu-nav {display:none; margin-top:5px; background:rgba(0,0,0,0.9); padding:10px; border-radius:6px;}
@@ -65,6 +57,7 @@ button:hover { background-color:#555; }
 .menu-nav li {margin:5px 0; position:relative;}
 .menu-nav li a {color:#eee; text-decoration:none; padding:8px; display:block;}
 .menu-nav li a:hover {background:#333; color:#fff;}
+/* Submenú interior */
 .menu-nav li .submenu {display:none; margin-left:10px; background:#222; border:1px solid #333; border-radius:4px;}
 .menu-nav li.active > .submenu {display:block;}
 
@@ -73,18 +66,19 @@ footer { text-align:center; padding:20px; background-color:#1a1a1a; color:#7c7c7
 
 /* Reproductor de música fijo */
 .music-player { position:fixed; bottom:20px; right:20px; z-index:1002; background-color:rgba(0,0,0,0.6); padding:10px; border-radius:10px; }
+.song-title { margin-top: 6px; text-align: center; font-size: 15px; color: #ffdddd; font-family: 'BookAntiqua', serif; text-shadow: 1px 1px 2px #000;}
 
 /* Videos */
 .videos { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:20px; }
 .videos iframe { border-radius:10px; }
 
-/* Tabla */
+/* Tablas de monstruos */
 .tabla-items { width:100%; border-collapse:collapse; margin-top:15px; }
 .tabla-items th, .tabla-items td { border:2px solid #444; padding:10px; background-color:#111; color:#eee; }
 .tabla-items th { background-color:#222; text-shadow:1px 1px #000; }
 .monster-img { width:80px; height:auto; border-radius:5px; }
 
-/* Game description box */
+/* Cuadro de la sinopsis del juego*/
 .game-description-box { padding:20px; border-radius:12px; background:linear-gradient(90deg,#400000,#000); border:1px solid rgba(255,60,60,0.25); box-shadow:0 0 18px rgba(0,0,0,0.7); backdrop-filter:blur(4px); margin-bottom:25px; }
 
 /* Formulario */
@@ -92,7 +86,7 @@ footer { text-align:center; padding:20px; background-color:#1a1a1a; color:#7c7c7
 .form-sh input, .form-sh textarea { padding:10px; background:#1a1a1a; border:2px solid #333; color:#eee; }
 .form-sh button { padding:10px; background-color:#550000; border:2px solid #220000; color:#fff; cursor:pointer; }
 
-/* Contenedor fijo en el bottom con imagen de fondo estática */
+/* Gif fijo abajo */
 .bottom-container {position: relative; bottom: 0; left: 0; width: 100%; height: 120px; background: url('imagenes/pyramid-head.gif') no-repeat center bottom; background-size: cover; overflow: hidden; z-index: 1000;}
 
 /* GIF que se mueve de izquierda a derecha */
@@ -116,3 +110,6 @@ footer { text-align:center; padding:20px; background-color:#1a1a1a; color:#7c7c7
 .image-absolute { position:absolute; top:10px; left:10px; width:120px; height:120px; object-fit:cover; border-radius:10px; border:2px solid rgba(255,0,0,0.4); }
 .image-absolute-top { position:absolute; top:50px; right:50px; width:150px; height:150px; z-index:1000; }
 .corner-image { width:100%; height:100%; object-fit:cover; opacity:1; }
+
+/* GIF sticky a la izquierda de la página */
+.sticky-gif {position: sticky;/* Se pega al hacer scroll */ top: 50px; left: 10px; width: 100px; height: auto; z-index: 1000;}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de la página</title>
+    <!-- Ícono de la pestaña -->
+    <link rel="icon" type="image/png" href="imagenes/metatron.png">
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="SilentHill.css">
+</head>
+<body>
+
+    <!-- Niebla / efectos globales -->
+    <div class="fog fog1"></div>
+    <div class="fog fog2"></div>
+
+    <!-- Reproductor de música sticky -->
+    <div class="music-player">
+        <audio id="player" controls></audio>
+        <p id="songTitle" class="song-title">Reproduciendo: —</p>
+        <div style="text-align:center; margin-top:5px;">
+            <button id="prevSong">⟨</button>
+            <button id="nextSong">⟩</button>
+        </div>
+    </div>
+
+    <!-- Encabezado general -->
+    <div class="image-absolute-top">
+        <img src="imagenes/alchemy.png" alt="Imagen del sello de metatron.">
+    </div>
+    <header>
+        <p>In my restless dreams, I see that town...</p>
+        <h1>Silent Hill</h1>
+          <!-- Menú principal -->
+        <nav class="index">
+            <ul>
+                <li><a href="SilentHill.html">Silent Hill 1</a></li>
+                <li><a href="SilentHill2.html">Silent Hill 2</a></li>
+                <li><a href="SilentHill3.html">Silent Hill 3</a></li>
+                <li><a href="SHVideos.html">Videos</a></li>
+                <li><a href="SHContacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- GIF sticky a la izquierda -->
+    <img src="Imagenes/robss.gif" class="sticky-gif">
+
+    <div class="container">
+
+        <main> 
+              <!-- ===================== SECCIÓN SILENT HILL 3 ===================== -->
+            <section id="sh3">
+                <!-- ======SINOPSIS DEL JUEGO ======-->
+                <h2>Silent Hill 3</h2>
+                <div class="game-description-box" id="lore3">
+                   <p>El juego sigue a Heather Mason, una adolescente que vive con su padre Harry Mason. Su vida cotidiana se ve interrumpida cuando es atacada por un extraño ser en un centro comercial y perseguida por figuras misteriosas. 
+                    Pronto, Heather descubre que está vinculada a la secta de Silent Hill, la misma que apareció en el primer juego, y que su destino está ligado a Cheryl/Maria, su identidad anterior como hija de Harry Mason.</p>
+                   <br>
+                    <p>Heather se adentra en una ciudad Silent Hill más oscura y distorsionada, enfrentándose a monstruos que simbolizan su miedo, confusión y trauma. 
+                    Encuentra personajes clave como Tracy, una niña aparentemente poseída, y Douglas Cartland, un investigador que la ayuda a comprender su conexión con la secta y los eventos del pasado. 
+                    La secta planea usar a Heather para invocar a God, un ser que traerá su versión de “renovación” al mundo.</p>
+                   <br>
+                    <p>A lo largo del juego, Heather debe enfrentarse a su propio pasado y a la verdad sobre su origen mientras lucha por sobrevivir. 
+                    El juego culmina con la confrontación con la secta y su líder, y su victoria o fracaso depende del enfrentamiento con los horrores que buscan controlarla, 
+                    cerrando el vínculo con los eventos del primer juego y la continuación de la mitología de Silent Hill.</p>
+                </div>
+                <!--====== CARRUSEL DE IMÁGENES DEL JUEGO USANDO CSS + JS ======-->
+                <div class="carousel2" id="img3">
+                    <img src="Imagenes/sh3-cover.jpg" alt="Silent Hill 3" class="slide">
+                    <img src="Imagenes/robbie.jpg" alt="Silent Hill 3" class="slide">
+                    <img src="Imagenes/bWCJqH695QiZjxDuWx7hQj-1200-80.jpg" alt="Silent Hill 3" class="slide">
+                    <img src="Imagenes/ingame_16x9.png" alt="Silent Hill 3" class="slide">
+                    <img src="Imagenes/Silent-Hill-3-Hallway-1068x600.jpg" alt="Silent Hill 3" class="slide">
+                    <img src="Imagenes/D977148af9c3d217d4df1f706561e9d49.gif" alt="Silent Hill 3" class="slide">
+                    <img src="Imagenes/silent-hill-3.avif" alt="Silent Hill 3" class="slide">
+                    <img src="Imagenes/sh06.webp" alt="Silent Hill 3" class="slide">
+                    <img src="Imagenes/claudia.jpg" alt="Silent Hill 3" class="slide">
+                    <img src="Imagenes/its-bread-v0-o12gohxyahjb1.jpg" alt="Silent Hill 3" class="slide">
+                </div>
+                <!-- Botones para cambiar de imagen-->
+                <div class="buttons">
+                    <button class="prev">⟨ Prev</button>
+                    <button class="next">Next ⟩</button>
+                </div>
+
+                <h3>Monstruos de Silent Hill 3</h3>
+                <table class="tabla-items" id="monstruos3">
+                    <tr>
+                        <th>Imagen</th><th>Monstruo</th><th>Descripción breve</th>
+                    </tr>
+                    <!-- Monstruos y Jefes SH3 -->
+                    <tr><td><img src="Imagenes/Closer.webp" class="monster-img"></td><td>Closer</td><td>Gigantes con brazos prensiles que representan opresión hacia Heather.</td></tr>
+                    <tr><td><img src="Imagenes/Pendulum.webp" class="monster-img"></td><td>Pendulum</td><td>Criatura flotante con cuchillas giratorias y chillidos.</td></tr>
+                    <tr><td><img src="Imagenes/Slurper.webp" class="monster-img"></td><td>Slurper</td><td>Bestias rápidas que se arrastran para atacar por sorpresa.</td></tr>
+                    <tr><td><img src="Imagenes/Numb.webp" class="monster-img"></td><td>Numb Body</td><td>Larvas blandas que suenan hinchadas; simbolizan fragilidad.</td></tr>
+                    <tr><td><img src="Imagenes/Double_Head.webp" class="monster-img"></td><td>Double Head</td><td>Perros bífidos con carne expuesta del Otro Mundo.</td></tr>
+                    <tr><td><img src="Imagenes/TheScraper.webp" class="monster-img"></td><td>Scraper</td><td>Humanos del culto con cuchillas; simbolizan fanatismo agresivo.</td></tr>
+                    <tr><td><img src="Imagenes/SH3Nurse.webp" class="monster-img"></td><td>Nurse (SH3)</td><td>Más grotescas y agresivas que en SH2; trauma hospitalario de Heather.</td></tr>
+                    <tr><td><img src="Imagenes/Splitworm.webp" class="monster-img"></td><td>Split Worm</td><td>Gusano gigante que aparece tempranamente.</td></tr>
+                    <tr><td><img src="Imagenes/MissionaryMonster.webp" class="monster-img"></td><td>Missionary</td><td>Asesino enviado por el culto para eliminar a Heather.</td></tr>
+                    <tr><td><img src="Imagenes/Glutton.webp" class="monster-img"></td><td>Glutton</td><td>Enorme criatura invisible tras un sello mágico.</td></tr>
+                    <tr><td><img src="Imagenes/LeonardWolf.webp" class="monster-img"></td><td>Leonard Wolf</td><td>Padre de Claudia transformado en monstruo acuático.</td></tr>
+                    <tr><td><img src="Imagenes/SH3_God_model.webp" class="monster-img"></td><td>God (SH3)</td><td>La deidad incompleta del culto, nacida a través de Heather.</td></tr>
+                </table>
+            </section>
+
+            <h2>Inventario</h2>
+
+                <h3>Armas</h3>
+                <table class="tabla-items">
+                    <tr><th>Arma</th><th>Descripción</th></tr>
+                    <tr><td>Navaja</td><td>Rápida pero débil.</td></tr>
+                    <tr><td>Pistola</td><td>Buen equilibrio.</td></tr>
+                    <tr><td>Escopeta</td><td>Ideal para grupos.</td></tr>
+                    <tr><td>Katana</td><td>Daño muy alto.</td></tr>
+                </table>
+
+                <h3>Objetos curativos</h3>
+                <table class="tabla-items">
+                    <tr><th>Objeto</th><th>Descripción</th></tr>
+                    <tr><td>Bebida energética</td><td>Curación pequeña.</td></tr>
+                    <tr><td>Botiquín</td><td>Curación media.</td></tr>
+                    <tr><td>Ampolla</td><td>Curación completa.</td></tr>
+                </table>
+
+                <h3>Objetos clave</h3>
+                <table class="tabla-items">
+                    <tr><th>Objeto</th><th>Uso</th></tr>
+                    <tr><td>Tarjeta de acceso</td><td>Abrir áreas industriales.</td></tr>
+                    <tr><td>Sello de Metatrón</td><td>Objeto ritual importante.</td></tr>
+                </table>
+
+            </section>
+        </main>
+
+    </div>
+
+    <!-- GIF animado inferior -->
+    <div class="bottom-container">
+        <img src="Imagenes/pyramid-head.gif" alt="Pyramid Head" class="moving-gif">
+    </div>
+
+    <!-- Footer común -->
+    <footer>
+        <p>Creado por un fan de Silent Hill &copy; 2025</p>
+    </footer>
+
+    <!-- Menú móvil / hamburguesa -->
+    <div class="menu-hamburger">
+        <button id="menu-toggle">☰</button>
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="SilentHill.html">Silent Hill 1</a></li>
+                <li><a href="SilentHill2.html">Silent Hill 2</a></li>
+                <li><a href="SilentHill3.html">Silent Hill 3</a></li>
+                <li><a href="SHVideos.html">Videos</a></li>
+                <li><a href="SHContacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Script principal -->
+    <script src="SilentHill.js"></script>
+
+</body>
+</html>

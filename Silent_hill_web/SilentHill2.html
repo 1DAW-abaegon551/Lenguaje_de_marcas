@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de la página</title>
+    <!-- Ícono de la pestaña -->
+    <link rel="icon" type="image/png" href="imagenes/metatron.png">
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="SilentHill.css">
+</head>
+<body>
+
+    <!-- Niebla / efectos globales -->
+    <div class="fog fog1"></div>
+    <div class="fog fog2"></div>
+
+    <!-- Reproductor de música sticky -->
+    <div class="music-player">
+        <audio id="player" controls></audio>
+        <p id="songTitle" class="song-title">Reproduciendo: —</p>
+        <div style="text-align:center; margin-top:5px;">
+            <button id="prevSong">⟨</button>
+            <button id="nextSong">⟩</button>
+        </div>
+    </div>
+
+    <!-- Encabezado general -->
+    <div class="image-absolute-top">
+        <img src="imagenes/alchemy.png" alt="Imagen del sello de metatron.">
+    </div>
+    <header>
+        <p>In my restless dreams, I see that town...</p>
+        <h1>Silent Hill</h1>
+        
+          <!-- Menú principal -->
+        <nav class="index">
+            <ul>
+                <li><a href="SilentHill.html">Silent Hill 1</a></li>
+                <li><a href="SilentHill2.html">Silent Hill 2</a></li>
+                <li><a href="SilentHill3.html">Silent Hill 3</a></li>
+                <li><a href="SHVideos.html">Videos</a></li>
+                <li><a href="SHContacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- GIF sticky a la izquierda -->
+    <img src="Imagenes/robss.gif" class="sticky-gif">
+
+    <div class="container">
+
+        <main> 
+            <!-- ===================== SECCIÓN SILENT HILL 2 ===================== -->
+            <section id="sh2">
+             <!-- ======SINOPSIS DEL JUEGO ======-->
+                <h2>Silent Hill 2</h2>
+                <div class="game-description-box" id="lore2">
+                    <p>El juego sigue a James Sunderland, quien recibe una carta de su esposa Mary, fallecida hace tres años, 
+                        diciéndole que lo espera en su “lugar especial” en Silent Hill. 
+                        Desconcertado y angustiado, James viaja a la ciudad en busca de Mary, aunque la premisa ya sugiere que algo sobrenatural 
+                        y perturbador está ocurriendo.</p>
+                    <br>    
+                    <p>Al llegar, Silent Hill se revela como un lugar lleno de niebla, soledad y criaturas grotescas que parecen reflejar los miedos,
+                         culpas y traumas internos de quienes entran en la ciudad. James se encuentra con varios personajes, como Maria, una mujer que se parece sorprendentemente a Mary, 
+                         y Eddie Dombrowski y Angela Orosco, quienes también están atrapados en la ciudad lidiando con sus propios tormentos psicológicos.</p>
+                    <br>
+                    <p>A medida que avanza, James descubre que Silent Hill no es solo un lugar físico, sino un espejo de su subconsciente, 
+                        que manifiesta sus sentimientos más oscuros. Las criaturas y los escenarios grotescos reflejan la culpa, el dolor y los secretos reprimidos de los personajes. 
+                        El juego concluye con varios finales posibles, determinados por las acciones y decisiones del jugador, revelando la verdad sobre la muerte de Mary y la relación de James con ella.</p>
+                </div>
+
+                <!--====== CARRUSEL DE IMÁGENES DEL JUEGO USANDO CSS + JS ======-->
+                <div class="carousel1" id="img2">
+                    <img src="Imagenes/Silent_Hill_2.jpg" alt="Silent Hill 2" class="slide">
+                    <img src="Imagenes/descarga.jpeg" alt="Silent Hill 2" class="slide">
+                    <img src="Imagenes/sh2sp.webp" alt="Silent Hill 2" class="slide">
+                    <img src="Imagenes/silent_hill_2-800921585-large.jpg" alt="Silent Hill 2" class="slide">
+                    <img src="Imagenes/Y4AHAHCYH5NSPJFFGKNPQ22EC4.jpg" alt="Silent Hill 2" class="slide">
+                    <img src="Imagenes/SH2-Letter-1024x670.jpg" alt="Silent Hill 2" class="slide">
+                    <img src="Imagenes/GK3FWbqbIAATK2Q.jpg" alt="Silent Hill 2" class="slide">
+                    <img src="Imagenes/maria.jpg" alt="Silent Hill 2" class="slide">
+                    <img src="Imagenes/UXP2CAM7J5PHVEM2U2XHA3NN4Q.avif" alt="Silent Hill 2" class="slide">
+                    <img src="Imagenes/6f18da5a921b30f619aa22cf198808b9.jpg" alt="Silent Hill 2" class="slide">
+                    <img src="Imagenes/silent_hill_01.jpg" alt="Silent Hill 2" class="slide">
+                </div>
+                <!-- Botones para cambiar de imagen-->
+                <div class="buttons">
+                    <button class="prev">⟨ Prev</button>
+                    <button class="next">Next ⟩</button>
+                </div>
+
+                <h3>Monstruos de Silent Hill 2</h3>
+                <table class="tabla-items" id="monstruos2">
+                    <tr>
+                        <th>Imagen</th><th>Monstruo</th><th>Descripción breve</th>
+                    </tr>
+                    <!-- Monstruos y Jefes SH2 -->
+                    <tr><td><img src="Imagenes/PyramidHead.webp" class="monster-img"></td><td>Pyramid Head</td><td>Manifestación del castigo, culpa y represión de James.</td></tr>
+                    <tr><td><img src="Imagenes/LyingFigure.webp" class="monster-img"></td><td>Lying Figure</td><td>Humanoides encerrados en un traje de piel; escupen ácido.</td></tr>
+                    <tr><td><img src="Imagenes/Mannequin.webp" class="monster-img"></td><td>Mannequin</td><td>Compuesto solo de piernas femeninas; simboliza deseo reprimido.</td></tr>
+                    <tr><td><img src="Imagenes/nurse.webp" class="monster-img"></td><td>Nurse</td><td>Enfermeras distorsionadas por la mente perturbada de James.</td></tr>
+                    <tr><td><img src="Imagenes/MariaBossForm.webp" class="monster-img"></td><td>Mary/Maria Boss</td><td>Última manifestación del conflicto emocional de James.</td></tr>
+                    <tr><td><img src="Imagenes/Abstractdaddy.webp" class="monster-img"></td><td>Abstract Daddy</td><td>Representa el abuso sufrido por Angela; enemigo extremadamente simbólico.</td></tr>
+                    <tr><td><img src="Imagenes/FleshLips.webp" class="monster-img"></td><td>Flesh Lip</td><td>Cuerpos colgantes que representan abuso emocional y verbal.</td></tr>
+                    <tr><td><img src="Imagenes/Mandarin.webp" class="monster-img"></td><td>Mandarin</td><td>Criaturas bajo las rejillas, invisibles salvo por sus brazos largos.</td></tr>
+                </table>
+            </section>
+
+                <h2>Inventario</h2>
+
+                <h3>Armas</h3>
+                <table class="tabla-items">
+                    <tr><th>Arma</th><th>Descripción</th></tr>
+                    <tr><td>Plancha</td><td>Arma inicial cuerpo a cuerpo.</td></tr>
+                    <tr><td>Pistola</td><td>Equilibrada y útil.</td></tr>
+                    <tr><td>Escopeta</td><td>Daño alto a corta distancia.</td></tr>
+                    <tr><td>Rifle</td><td>Ideal para jefes.</td></tr>
+                </table>
+
+                <h3>Objetos curativos</h3>
+                <table class="tabla-items">
+                    <tr><th>Objeto</th><th>Descripción</th></tr>
+                    <tr><td>Bebida energética</td><td>Curación leve.</td></tr>
+                    <tr><td>Botiquín</td><td>Curación media.</td></tr>
+                    <tr><td>Ampolla</td><td>Curación total.</td></tr>
+                </table>
+
+                <h3>Objetos clave</h3>
+                <table class="tabla-items">
+                    <tr><th>Objeto</th><th>Uso</th></tr>
+                    <tr><td>Llave del Hotel</td><td>Acceso al Lakeview Hotel.</td></tr>
+                    <tr><td>Foto de Mary</td><td>Elemento importante de la historia.</td></tr>
+                </table>
+
+        </main>
+
+    </div>
+
+    <!-- GIF animado inferior -->
+    <div class="bottom-container">
+        <img src="Imagenes/pyramid-head.gif" alt="Pyramid Head" class="moving-gif">
+    </div>
+
+    <!-- Footer común -->
+    <footer>
+        <p>Creado por un fan de Silent Hill &copy; 2025</p>
+    </footer>
+
+    <!-- Menú móvil / hamburguesa -->
+    <div class="menu-hamburger">
+        <button id="menu-toggle">☰</button>
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="SilentHill.html">Silent Hill 1</a></li>
+                <li><a href="SilentHill2.html">Silent Hill 2</a></li>
+                <li><a href="SilentHill3.html">Silent Hill 3</a></li>
+                <li><a href="SHVideos.html">Videos</a></li>
+                <li><a href="SHContacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Script principal -->
+    <script src="SilentHill.js"></script>
+
+</body>
+</html>
